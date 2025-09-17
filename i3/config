@@ -51,6 +51,8 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork --color=1
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components ssh,secrets,pkcs11
+
 # autostart
 exec_always --no-startup-id nitrogen --restore 
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
