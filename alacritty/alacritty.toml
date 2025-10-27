@@ -1,13 +1,26 @@
+[general]
+import = [
+  "~/.config/alacritty/themes/themes/gruvbox_material_medium_dark.toml"
+  # "~/.config/alacritty/themes/themes/one_dark.toml"
+  # "~/.config/alacritty/catppuccin-mocha.toml"
+]
+
+[env]
+TERM = "xterm-256color"
+
 [window]
 padding = { x = 5, y = 5 }
 # dynamic_padding = true
+# opacity = 0.8
+# blur = true
 
 [scrolling]
 history = 100000
 multiplier = 5
 
 [font]
-normal = { family = "SauceCodePro Nerd Font Mono", style = "Regular"}
+# normal = { family = "SauceCodePro Nerd Font Mono", style = "Regular"}
+normal = { family = "MesloLGS NF"}
 size = 8
 
 [selection]
@@ -15,26 +28,3 @@ save_to_clipboard = true
 
 [mouse]
 hide_when_typing = true
-
-[colors]
-[colors.primary]
-background = '#1F1F1F'
-foreground = '#D4D4D4'
-
-[colors.cursor]
-text = "#1F1F1F"
-cursor = "#D4D4D4"
-
-[colors.normal]
-black = "#1F1F1F"
-red = "#F44747"
-green = "#6A9955"
-yellow = "#DCDCAA"
-blue = "#569CD6"
-magenta = "#C586C0"
-cyan = "#56B6C2"
-white = "#D4D4D4"
-
-[colors.bright]
-black = "#808080"
-  
